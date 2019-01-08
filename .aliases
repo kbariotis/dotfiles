@@ -88,3 +88,5 @@ alias dcl="docker-compose -f $HOME/projects/streethub/operations/docker-compose.
 alias dct="docker-compose -f $HOME/projects/streethub/operations/docker-compose.yml"
 
 alias zshconfig="vi ~/.zshrc"
+
+alias tf=terraform
