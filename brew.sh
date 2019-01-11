@@ -40,6 +40,7 @@ brew install screen
 brew install fzf
 
 brew install git
+brew install diff-so-fancy
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
 brew install rename
@@ -58,8 +59,8 @@ brew cleanup
 
 
 # Install native apps
-
 brew install caskroom/cask/brew-cask
+
 # brew tap caskroom/versions
 
 # daily
