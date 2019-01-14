@@ -90,3 +90,7 @@ alias dct="docker-compose -f $HOME/projects/streethub/operations/docker-compose.
 alias zshconfig="vi ~/.zshrc"
 
 alias tf=terraform
+
+alias fuck='sudo "$SHELL" -c "$(history -p !!)"' 
+
+alias history="fc -li 1"
