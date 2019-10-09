@@ -109,3 +109,9 @@ export PATH=${PATH}:$HOME/bin
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/kbariotis/.nvm/versions/node/v8.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kbariotis/.nvm/versions/node/v8.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+eval "$(rbenv init -)"
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/kbariotis/projects/streethub/shopify/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/kbariotis/projects/streethub/shopify/node_modules/tabtab/.completions/slss.zsh

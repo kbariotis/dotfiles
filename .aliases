@@ -84,8 +84,8 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
 # Trouva Docker
-alias dcl="docker-compose -f $HOME/projects/streethub/operations/docker-compose.yml --tail=1500 -f"
-alias dct="docker-compose -f $HOME/projects/streethub/operations/docker-compose.yml"
+alias dcl="docker-compose -f $HOME/projects/trouva/operations/docker-compose.yml --tail=1500 -f"
+alias dct="docker-compose -f $HOME/projects/trouva/operations/docker-compose.yml"
 
 alias zshconfig="vi ~/.zshrc"
 
@@ -94,3 +94,5 @@ alias tf=terraform
 alias fuck='sudo "$SHELL" -c "$(history -p !!)"' 
 
 alias history="fc -li 1"
+
+alias gtree="git log --graph --pretty=oneline --abbrev-commit"
