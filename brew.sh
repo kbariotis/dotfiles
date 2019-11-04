@@ -76,12 +76,19 @@ brew cask install imageoptim
 brew cask install vlc
 brew cask install gpgtools
 brew cask install licecap
-# brew cask install utorrent
+brew cask install transmission
 
 brew cask install spotify
 
 brew tap caskroom/fonts 
-brew cask install font-fira-code
 
+brew cask install font-fira-code
 brew cask install istat-menus5
 brew cask install slack
+brew cask install virtualbox
+brew cask install docker
+
+brew install kubectl
+brew install minikube
+
+brew cask install sequel-pro pgadmin4 dbeaver-community
