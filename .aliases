@@ -93,6 +93,5 @@ alias tf=terraform
 
 alias fuck='sudo "$SHELL" -c "$(history -p !!)"' 
 
-alias history="fc -li 1"
 
 alias gtree="git log --graph --pretty=oneline --abbrev-commit"
