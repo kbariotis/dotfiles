@@ -15,7 +15,7 @@ brew install moreutils
 # GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 
 # Bash 4
@@ -27,10 +27,10 @@ brew install bash-completion
 brew install homebrew/completions/brew-cask-completion
 
 # Install wget with IRI support
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim --with-override-system-vi
+brew install vim
 brew install nano
 brew install grep
 brew install openssh
@@ -41,11 +41,11 @@ brew install fzf
 
 brew install git
 brew install diff-so-fancy
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install node # This installs `npm` too using the recommended installation method
 brew install rename
 brew install tree
-brew install ffmpeg --with-libvpx
+brew install ffmpeg
 
 brew install terminal-notifier
 
@@ -61,10 +61,8 @@ brew cleanup
 # Install native apps
 brew install caskroom/cask/brew-cask
 
-# brew tap caskroom/versions
-
 # daily
-brew cask install spectacle
+brew cask install rectangle
 brew cask install gyazo
 
 # dev
@@ -77,7 +75,8 @@ brew cask install vlc
 brew cask install gpgtools
 brew cask install licecap
 brew cask install transmission
-
+brew cask install google-chrome
+brew cask install visual-studio-code
 brew cask install spotify
 
 brew tap caskroom/fonts 
@@ -87,6 +86,7 @@ brew cask install istat-menus5
 brew cask install slack
 brew cask install virtualbox
 brew cask install docker
+brew cask install insomnia
 
 brew install kubectl
 brew install minikube

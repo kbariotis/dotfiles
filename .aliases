@@ -81,7 +81,7 @@ alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew c
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
 
 # From https://news.ycombinator.com/item?id=11070797
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
 
 # Trouva Docker
 alias dcl="docker-compose -f $HOME/projects/trouva/operations/docker-compose.yml --tail=1500 -f"
