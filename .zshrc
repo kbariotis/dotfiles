@@ -97,4 +97,35 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-source $HOME/.aliases
+. $HOME/.aliases
+. $HOME/.functions
+
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+export NPM_TOKEN=$(awk -F "=" '/_authToken/{print $NF}' ~/.npmrc)
+
+# Include home scripts
+export PATH=${PATH}:$HOME/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kostasbariotis/gcloud/path.zsh.inc' ]; then . '/Users/kostasbariotis/gcloud/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kostasbariotis/gcloud/completion.zsh.inc' ]; then . '/Users/kostasbariotis/gcloud/completion.zsh.inc'; fi
+
+export JAVA_HOME='/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home'
+export PATH=$PATH:$JAVA_HOME
