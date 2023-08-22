@@ -90,3 +90,4 @@ brew install minikube
 
 brew install sequel-pro pgadmin4 dbeaver-community
 brew install rancher
+brew install nvm
