@@ -58,37 +58,35 @@ brew cleanup
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 
-# Install native apps
-brew install caskroom/cask/brew-cask
-
 # daily
-brew cask install rectangle
-brew cask install gyazo
+brew install rectangle
+brew install gyazo
 
 # dev
-brew cask install iterm2
-brew cask install imagealpha
-brew cask install imageoptim
+brew install iterm2
+brew install imagealpha
+brew install imageoptim
 
 # less often
-brew cask install vlc
-brew cask install gpgtools
-brew cask install licecap
-brew cask install transmission
-brew cask install google-chrome
-brew cask install visual-studio-code
-brew cask install spotify
+brew install vlc
+brew install gpgtools
+brew install licecap
+brew install transmission
+brew install google-chrome
+brew install visual-studio-code
+brew install spotify
 
 brew tap caskroom/fonts 
 
-brew cask install font-fira-code
-brew cask install istat-menus5
-brew cask install slack
-brew cask install virtualbox
-brew cask install docker
-brew cask install insomnia
+brew install font-fira-code
+brew install istat-menus5
+brew install slack
+brew install virtualbox
+brew install docker
+brew install insomnia
 
 brew install kubectl
 brew install minikube
 
-brew cask install sequel-pro pgadmin4 dbeaver-community
+brew install sequel-pro pgadmin4 dbeaver-community
+brew install rancher

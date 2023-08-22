@@ -119,3 +119,7 @@ export NVM_DIR="$HOME/.nvm"
 if which thefuck > /dev/null; then
     eval "$(thefuck --alias)"
 fi;
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/kostasbariotis/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
